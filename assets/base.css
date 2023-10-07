@@ -2370,7 +2370,8 @@ product-info .loading-overlay:not(.hidden) ~ *,
 .header-wrapper {
   display: block;
   position: relative;
-  background-color: rgba(var(--color-background), 0.92);
+  background-color: rgba(var(--color-background), 0.92); 
+  backdrop-filter: blur(20px);
 }
 
 .header-wrapper--border-bottom {
