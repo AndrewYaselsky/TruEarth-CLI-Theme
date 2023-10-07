@@ -2370,7 +2370,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
 .header-wrapper {
   display: block;
   position: relative;
-  background-color: rgb(var(--color-background));
+  background-color: rgba(var(--color-background), 0.92);
 }
 
 .header-wrapper--border-bottom {
