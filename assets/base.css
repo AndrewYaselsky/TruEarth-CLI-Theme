@@ -1348,7 +1348,8 @@ button.shopify-payment-button__button--unbranded {
   background: #96cb49;
   border-radius: 10px;
   font-weight: 600;
-  font-size: 21px;
+  font-size: 18px;
+  color: #fff;
   padding: 20px 40px;
 }
 .bunner__custom__button::after{
