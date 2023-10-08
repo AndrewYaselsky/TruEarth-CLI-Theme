@@ -965,6 +965,7 @@ class VariantSelects extends HTMLElement {
     this.updatePickupAvailability();
     this.removeErrorMessage();
     this.updateVariantStatuses();
+    this.filterImgVariant();
 
     if (!this.currentVariant) {
       this.toggleAddButton(true, '', true);
@@ -975,6 +976,17 @@ class VariantSelects extends HTMLElement {
       this.updateVariantInput();
       this.renderProductInfo();
       this.updateShareUrl();
+    }
+  }
+
+  filterImgVariant(){
+    if(this.currentVariant.featured_image && this.currentVariant.featured_image.alt){
+      document.querySelectorAll("[thumb-alt]").forEach(img => img.classList.add("thumbnail-list_item_hide"));
+      const currentImgAlt = this.currentVariant.featured_image.alt;
+      const thubmnailSelector = `[thumb-alt = '${currentImgAlt}']`;
+      document.querySelectorAll(thubmnailSelector).forEach(img => img.classList.remove("thumbnail-list_item_hide"));
+    }else{
+      document.querySelectorAll("[thumb-alt]").forEach(img => img.classList.remove("thumbnail-list_item_hide"));
     }
   }
 
