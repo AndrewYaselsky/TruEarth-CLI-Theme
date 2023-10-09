@@ -93,7 +93,7 @@
         "template--16361626108089__9175828e-7c2b-40b1-9b82-920bdf27ee14-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "{{ product.metafields.custom.guarantee.value }}",
+            "heading": "<strong>{{ product.metafields.custom.guarantee.value }}<\/strong>",
             "heading_size": "h1"
           }
         },
